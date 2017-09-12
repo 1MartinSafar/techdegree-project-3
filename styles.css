@@ -1,0 +1,18 @@
+/*
+font-family: 'Merriweather', serif;
+font-family: 'Roboto Slab', serif;
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+}
+
+.wrapper
+ {
+  display: flex;
+  flex-direction: column;
+}
