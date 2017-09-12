@@ -12,6 +12,10 @@ body {
   /*line-height: 1.5em;*/
 }
 
+#signup {
+  font-family: 'Merriweather', serif;
+}
+
 /* FLEX CONTAINERS */
 .wrapper,
 .main-header,
@@ -190,18 +194,70 @@ label[for="html-news"] {
   /*line-height: 1.7em;*/
 }
 
+input[type="checkbox"],
+input[type="radio"] {
+  background: blue;
+  /*width: 13px;*/
+  height: 13px;
+  /*width: 13px;*/
+  /*margin-right: 0;*/
+  /*margin: 0;*/
+  /*display: inline;*/
+}
+
+.newsletter div input {
+  margin-left: 0.3em;
+}
+.newsletter div label {
+  padding-left: 0.5em;
+}
+
+#other {
+  margin-bottom: 0.8em;
+}
+
 textarea {
+  resize: none;
+
+  border: none;
+  border-radius: 5px;
+  background-color: #ededed;
+  min-width: 288px;
+  /*margin-bottom: 1em;*/
 }
 
 input[type="submit"] {
   color: white;
   /* link weight between normal and bold */
-  font-weight: bold;
+  font-weight: 700;
   border: none;
   background-color: #31c2b5;
   padding: 1em;
+  padding-bottom: 2em;
+  margin-top: 0.2em;
+  margin-bottom: 1em;
+  min-width: 288px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 13em;
 }
 
 .copyright {
-
+  font-size: 0.8em;
+  font-style: italic;
+  opacity: 0.5;
+  margin-top: 0.5em;
+  /*align-self: center;*/
 }
+
+
+
+
+
+
+
+
+/**/

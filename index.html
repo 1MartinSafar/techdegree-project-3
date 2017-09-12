@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
     <!-- MOCKUP TEXT FONT -->
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700" rel="stylesheet">
     <!-- STRONG TEXT FONT -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700" rel="stylesheet">
   </head>
@@ -59,21 +59,37 @@
               <option value="">State 5</option>
             </select>
 
-            <label for="user_zip">Zip Code</label>
+            <label for="zip">Zip Code</label>
             <input type="text" name="zip" id="zip">
           </fieldset>
 
-          <fieldset>
+          <fieldset class="newsletter">
             <legend class="second">Newsletter</legend>
 
             <label for="html-news">Select the newsletters you would like to receive</label>
-            <input type="checkbox" name="html-news" value="HTML News" id="html-news">
-            <input type="checkbox" name="css-news" value="CSS News" id="css-news">
-            <input type="checkbox" name="js-news" value="JavaScript News" id="js-news">
+
+            <div>
+              <input type="checkbox" name="html-news" value="HTML News" id="html-news">
+              <label for="html-news">HTML News</label>
+            </div>
+            <div>
+              <input type="checkbox" name="css-news" value="CSS News" id="css-news">
+              <label for="css-news">CSS News</label>
+            </div>
+            <div>
+              <input type="checkbox" name="js-news" value="JavaScript News" id="js-news">
+              <label for="js-news">Javascript News</label>
+            </div>
 
             <label for="html-format">Newsletter format</label>
-            <input type="radio" name="format" value="HTML" id="html-format">
-            <input type="radio" name="format" value="Plain text" id="plain-format">
+            <div>
+              <input type="radio" name="format" value="HTML" id="html-format">
+              <label for="html-format">HTML</label>
+            </div>
+            <div>
+              <input type="radio" name="format" value="Plain text" id="plain-format">
+              <label for="plain-format">Plain text</label>
+            </div>
 
             <label for="other">Other topics you'd like to hear about</label>
             <textarea name="other-topics" rows="4" cols="20" id="other"></textarea>
