@@ -9,10 +9,116 @@ font-family: 'Roboto Slab', serif;
 
 body {
   font-family: 'Merriweather', serif;
+  /*line-height: 1.5em;*/
 }
 
-.wrapper
+/* FLEX CONTAINERS */
+.wrapper,
+.main-header,
+.forms,
+fieldset,
+select,
+.title
  {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+
+/* MAIN STYLES */
+
+h1 {
+  font-weight: normal;
+  font-size: 1.2em;
+}
+
+.title {
+  height: 4em;
+  color: white;
+  background-color: #374a5d;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro {
+  max-width: 90%;
+  align-self: center;
+  border-bottom: solid 4px black;
+  margin-bottom: 0.2em;
+}
+.intro h2 {
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.intro p {
+  color: #9d9d9d;
+  font-size: 0.85em;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 0.75em;
+
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+
+  line-height: 1.25em;
+  /*min-width: 300px;*/
+}
+
+main {
+  max-width: 90%;
+  align-self: center;
+  border-top: solid 1px black;
+  padding-top: 1.5em;
+}
+
+fieldset {
+  border: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+legend {
+
+}
+
+label {
+
+}
+
+input {
+
+}
+
+select {
+
+}
+
+option {
+
+}
+
+#user_zip {
+
+}
+
+textarea {
+
+}
+
+input[type="submit"] {
+  color: white;
+  /* link weight between normal and bold */
+  font-weight: bold;
+  border: none;
+  background-color: #31c2b5;
+  padding: 1em;
+}
+
+.copyright {
+
 }
