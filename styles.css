@@ -173,8 +173,9 @@ input:focus {
   font-weight: bolder;
 }
 
-select {}
-option {}
+#user_state:focus {
+  border: 2px solid black;
+}
 
 #zip {
   margin-bottom: 1.1em;
@@ -192,6 +193,8 @@ label[for="html-news"] {
   padding-left: 0.3em;
   margin-right: 0em;
   /*line-height: 1.7em;*/
+
+  padding-left: 0;
 }
 
 input[type="checkbox"],
@@ -232,7 +235,7 @@ input[type="submit"] {
   font-weight: 700;
   border: none;
   background-color: #31c2b5;
-  padding: 1em;
+  padding: 1.2em;
   padding-bottom: 2em;
   margin-top: 0.2em;
   margin-bottom: 1em;
@@ -252,6 +255,239 @@ footer {
   margin-top: 0.5em;
   /*align-self: center;*/
 }
+
+
+
+
+.forms fieldset div {
+  display: flex;
+  flex-direction: column;
+}
+
+.forms fieldset div label {
+  /*margin-top: 7em;*/
+}
+
+.intro {
+  max-width: 288px;
+  /*max-width: 332px;*/
+}
+
+main {
+  max-width: 288px;
+}
+
+.forms fieldset[class="newsletter"] div {
+  display: flex;
+  flex-direction: row;
+  /*justify-content: flex-start;*/
+  /*align-items: center;*/
+  justify-content: space-between;
+}
+
+.forms fieldset[class="newsletter"] div {
+  justify-content: flex-start;
+  /*align-items: flex-start;*/
+  align-items: center;
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+
+  margin-bottom: 0.3em;
+}
+
+label[for="other"] {
+  margin-top: 1.25em;
+  margin-bottom: 0.75em;
+}
+
+div label {
+  margin-left: 0.2em;
+}
+
+.forms fieldset[class="newsletter"] div label {
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.25em;
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+textarea:focus {
+  outline: none;
+  /*border-color: black;*/
+  border: 2px solid black;
+}
+
+#signup:focus {
+  border: 2px solid black;
+}
+
+/*#signup:hover {
+  border: 2px solid black;
+}*/
+
+/* ======================================================================
+                        TABLET/DESKTOP Size: 768px Media Query
+========================================================================= */
+
+@media (min-width: 768px) {
+
+  /* FLEX CONTAINERS */
+  /*fieldset,
+   {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }*/
+
+  .forms fieldset div {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: flex-start;*/
+    /*align-items: center;*/
+    justify-content: space-between;
+  }
+
+  div label {
+    /*margin-top: 1.5em;*/
+    margin-right: 1.5em;
+  }
+  div input {
+    /*margin-left: 1em;*/
+  }
+
+  /*div:not([.title]) {
+    margin-top: 1em;
+  }*/
+
+  div {
+    margin-top: 1em;
+  }
+
+  .wrapper,
+  .title {
+    margin-top: 0;
+  }
+
+  .intro {
+    min-width: 582px;
+    max-width: 36.375em;
+
+    min-width: 596px;;
+    max-width: 38.375em;
+  }
+  main {
+    max-width: 36.375em;
+
+    max-width: 38.375em;
+  }
+
+  input[id^="user"],
+  select {
+    min-width: 436px;
+  }
+
+  textarea {
+    min-width: 36.375em;
+  }
+  #signup {
+    max-width: 582px;
+    margin-bottom: 1.5em;
+  }
+
+  legend {
+    padding-top: 2em;
+  }
+
+  .intro h2 {
+    font-size: 1.4em;
+    padding-top: 1em;
+  }
+  .intro p {
+    padding-bottom: 1em;
+  }
+
+  select {
+    padding-left: 1em;
+  }
+
+  .newsletter {
+    margin-top: 1em;
+  }
+  .second {
+    padding-top: 2.2em;
+    padding-bottom: 0em;
+  }
+
+  .forms fieldset[class="newsletter"] div {
+    justify-content: flex-start;
+    /*align-items: flex-start;*/
+    align-items: center;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0.5em;
+  }
+
+  .forms fieldset[class="newsletter"] div label {
+    margin-top: 0;
+    padding-top: 0;
+    /*margin-bottom: 0.5em;*/
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  /* moving margin-bottom from label to div */
+
+
+  input[type="checkbox"] {
+    margin-right: 0.25em;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .copyright {
+    margin-bottom: 12em;
+  }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
