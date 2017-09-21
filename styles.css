@@ -1,54 +1,22 @@
-/*
-font-family: 'Merriweather', serif;
-font-family: 'Roboto Slab', serif;
-*/
-
 * {
   box-sizing: border-box;
 }
 
 body {
   font-family: 'Merriweather', serif;
-  /*line-height: 1.5em;*/
 }
 
 /* EXTRA CREDIT: BACKGROUND COLOR OF AT LEAST 1 OF THE MAIN SECTIONS */
 .newsletter {
-  /*max-width: 582px;*/
-
-  background-color: #b1f0b4;
-  background-color: #e4fce7;
-
-  background-color: #31c2b5;
-  background-color: #f2fffe;
-
-  background-color: #ade89f;
-  background-color: #d4f9cb;
-
-  background-color: #66b2b2;
-
-
-  background-color: #495C70;
-  background-color: #495C70;
-
+  width: 290px;
   color: white;
-  /*padding-top: 0.5em;*/
+  background-color: #495C70;
+  border-radius: 10px;
   padding-left: 0.5em;
   margin-right: 0.5em;
-
-  width: 290px;
-
-
-  border-radius: 10px;
-}
-legend {
-  /*padding: 0;*/
-  /*margin: 0;*/
 }
 
 .second {
-  padding-top: 4em;
-  /*padding-top: 2em;*/
   padding-top: 3em;
 }
 fieldset {
@@ -60,23 +28,8 @@ fieldset {
   margin-right: 0.25em;
 }
 #signup {
-  /*width: 255px;*/
   margin-top: 1.5em;
 }
-
-.newsletter {
-  /*padding-top: 0;*/
-  /*margin-top: 0;*/
-}
-.second {
-  /*padding-top: 0;*/
-  /*margin-top: 0;*/
-}
-
-
-
-
-
 
 #signup {
   font-family: 'Merriweather', serif;
@@ -127,24 +80,22 @@ h1 {
   color: #9d9d9d;
   font-size: 0.85em;
   font-weight: 300;
+  line-height: 1.25em;
   text-align: center;
+
   margin-top: 0.75em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 2em;
 
   padding-left: 0;
   padding-right: 0;
-  margin-left: 0;
-  margin-right: 0;
-
-  line-height: 1.25em;
-  margin-bottom: 2em;
-  /*min-width: 300px;*/
 }
 
 main {
   max-width: 90%;
   align-self: center;
   border-top: solid 2px black;
-  /*padding-top: 1.5em;*/
 }
 
 fieldset {
@@ -170,40 +121,24 @@ label {
 
 input,
 select {
-  /*text-align: right;*/
-  font-size: 0.75em;
   font-size: 1.1em;
-
   font-weight: 300;
   height: 45px;
+
   border-style: none;
   border-radius: 5px;
-  background-color: #F5F5F5;
-  background-color: #DCDCDC;
   background-color: #ededed;
-  /*padding-right: 1.5em;*/
-  /*opacity: 0.5;*/
+
   padding-left: 1em;
 
   appearance: none;
   box-shadow: none;
-
   outline: none;
 }
 
 input[id^="user"],
 select {
-
-
-  /*min-width: 288px;*/
-  /*width: 280px;*/
-  width: 270px;
   width: 290px;
-  /*width: 275px;*/
-
-  /*margin-right: 1em;*/
-
-  /*min-width: 388px;*/
 }
 
 select {
@@ -223,29 +158,19 @@ select#user_state {
 }
 
 .second {
-  border-top: 2px solid black;
   width: 100%;
-  /*margin-top: 2em;*/
 }
 
 label[for="html-news"] {
   font-size: 0.85em;
-  padding-left: 0.3em;
-  margin-right: 0em;
-  /*line-height: 1.7em;*/
 
+  margin-right: 0em;
   padding-left: 0;
 }
 
 input[type="checkbox"],
 input[type="radio"] {
-  background: blue;
-  /*width: 13px;*/
   height: 13px;
-  /*width: 13px;*/
-  /*margin-right: 0;*/
-  /*margin: 0;*/
-  /*display: inline;*/
 }
 
 .newsletter div input {
@@ -261,34 +186,29 @@ input[type="radio"] {
 
 textarea {
   resize: none;
+  width: 255px;
+  height: 90px;
 
   border: none;
   border-radius: 5px;
   background-color: #ededed;
-  /*min-width: 288px;*/
 
-  height: 90px;
-  /*margin-bottom: 1em;*/
-
-
-  width: 265px;
-  width: 255px;
   padding-top: 0.5em;
   padding-left: 0.5em;
 }
 
 input[type="submit"] {
   color: white;
-  /* link weight between normal and bold */
   font-weight: 700;
+  width: 280px;
+
   border: none;
   background-color: #31c2b5;
+
   padding: 1.2em;
   padding-bottom: 2em;
   margin-top: 0.2em;
   margin-bottom: 1em;
-
-  width: 280px;
 }
 
 footer {
@@ -302,7 +222,6 @@ footer {
   font-style: italic;
   opacity: 0.5;
   margin-top: 0.5em;
-  /*align-self: center;*/
 }
 
 .forms fieldset div {
@@ -310,13 +229,8 @@ footer {
   flex-direction: column;
 }
 
-.forms fieldset div label {
-  /*margin-top: 7em;*/
-}
-
 .intro {
   max-width: 288px;
-  /*max-width: 332px;*/
 }
 
 main {
@@ -326,21 +240,18 @@ main {
 .forms fieldset[class="newsletter"] div {
   display: flex;
   flex-direction: row;
-  /*justify-content: flex-start;*/
-  /*align-items: center;*/
   justify-content: space-between;
 }
 
 .forms fieldset[class="newsletter"] div {
   justify-content: flex-start;
-  /*align-items: flex-start;*/
   align-items: center;
-  margin-top: 0;
-  padding-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 0;
 
+  margin-top: 0;
   margin-bottom: 0.3em;
+
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 label[for="other"] {
@@ -369,18 +280,14 @@ input[type="checkbox"] {
 
 /* TESTING BORDER FOR .NEWSLETTER INSTEAD OF .SECOND*/
 .second {
-  /*margin-right: 0.5em;*/
   border: none;
-  /*padding-top: 2em;*/
 }
 .newsletter {
-  /*border-top: 2px solid black;*/
   margin-top: 0;
-  /*padding-top: 1em;*/
-  /*padding-top: 0;*/
 }
 fieldset:first-child {
   border-bottom: 2px solid black;
+
   padding-bottom: 0;
   margin-bottom: 0;
 }
@@ -390,8 +297,6 @@ fieldset:first-child {
 }
 .intro,
 main {
-  width: 280px;
-  width: 270px;
   width: 290px;
 }
 
@@ -439,51 +344,17 @@ input:focus::placeholder,
 input:focus,
 textarea:focus,
 #signup:hover {
-  background-color: white;
-  background-color: #ecfffd;
   background-color: #deff78;
-  /*color: black;*/
 }
 #user_state:focus {
   background-color: #deff78;
 }
-#signup:focus {
-  /*color: black;*/
-}
-#signup:hover {
-
-}
-
-/*input:focus,
-#other:focus {
-  font-weight: bold;
-}*/
-
-
-/*
-
-#other:focus::placeholder {
-  visibility: hidden;
-}
-
-textarea:focus {
-  outline: none;
-  border: 2px solid black;
-}
-
-input:focus::placeholder {
-  visibility: hidden;
-}
-
-*/
 
 option:not([id="state"]) {
   font-weight: bold;
   color: black;
   opacity: 1;
 }
-
-
 
 /* ======================================================================
                         TABLET/DESKTOP Size: 768px Media Query
@@ -492,35 +363,19 @@ option:not([id="state"]) {
 @media (min-width: 768px) {
 
   /* FLEX CONTAINERS */
-  /*fieldset,
-   {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }*/
 
   .forms fieldset div {
     display: flex;
     flex-direction: row;
-    /*justify-content: flex-start;*/
-    /*align-items: center;*/
     justify-content: space-between;
   }
 
-  div label {
-    /*margin-top: 1.5em;*/
-    margin-right: 1.5em;
-  }
-  div input {
-    /*margin-left: 1em;*/
-  }
-
-  /*div:not([.title]) {
-    margin-top: 1em;
-  }*/
-
   div {
     margin-top: 1em;
+  }
+
+  div label {
+    margin-right: 1.5em;
   }
 
   .wrapper,
@@ -529,15 +384,10 @@ option:not([id="state"]) {
   }
 
   .intro {
-    min-width: 582px;
-    max-width: 36.375em;
-
     min-width: 596px;;
     max-width: 38.375em;
   }
   main {
-    max-width: 36.375em;
-
     max-width: 38.375em;
   }
 
@@ -550,8 +400,6 @@ option:not([id="state"]) {
     justify-content: flex-start;
   }
   #zip {
-    margin-left: 3.35em;
-
     margin-left: 4.75em;
   }
 
@@ -562,14 +410,11 @@ option:not([id="state"]) {
     padding-top: 1em;
     padding-left: 1em;
   }
-  /*#other:focus::placeholder {
-    visibility: hidden;
-  }*/
 
   #signup {
     width: 606px;
-    margin-bottom: 1.5em;
     margin-top: 2em;
+    margin-bottom: 1.5em;
   }
 
   legend {
@@ -598,30 +443,30 @@ option:not([id="state"]) {
 
   .forms fieldset[class="newsletter"] div {
     justify-content: flex-start;
-    /*align-items: flex-start;*/
     align-items: center;
+
     margin-top: 0;
-    padding-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 0;
     margin-bottom: 0.5em;
+
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .forms fieldset[class="newsletter"] div label {
     margin-top: 0;
-    padding-top: 0;
-    /*margin-bottom: 0.5em;*/
     margin-bottom: 0;
+
+    padding-top: 0;
     padding-bottom: 0;
   }
-  /* moving margin-bottom from label to div */
-
 
   input[type="checkbox"] {
-    margin-right: 0.25em;
+
     margin-top: 0;
-    padding-top: 0;
+    margin-right: 0.25em;
     margin-bottom: 0;
+
+    padding-top: 0;
     padding-bottom: 0;
   }
 
@@ -631,56 +476,10 @@ option:not([id="state"]) {
 
   .intro,
   main {
-    width: 280px;
-    width: 270px;
-    width: 290px;
-
-    width: 596px;
     width: 606px;
   }
   .newsletter {
     padding-right: 0.5em;
   }
-  #signup {
-    /*width: 606px;*/
-  }
-  #zip {
-    /*margin-left:*/
-  }
-
-
-
-
-
-
-
-
-
-
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**/
