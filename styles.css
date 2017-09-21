@@ -12,6 +12,69 @@ body {
   /*line-height: 1.5em;*/
 }
 
+/* EXTRA CREDIT: BACKGROUND COLOR OF AT LEAST 1 OF THE MAIN SECTIONS */
+.newsletter {
+  /*max-width: 582px;*/
+
+  background-color: #b1f0b4;
+  background-color: #e4fce7;
+
+  background-color: #31c2b5;
+  background-color: #f2fffe;
+
+  background-color: #ade89f;
+  background-color: #d4f9cb;
+
+  background-color: #66b2b2;
+
+
+  background-color: #495C70;
+  background-color: #495C70;
+
+  color: white;
+  /*padding-top: 0.5em;*/
+  padding-left: 0.5em;
+  margin-right: 0.5em;
+
+  width: 290px;
+}
+legend {
+  /*padding: 0;*/
+  /*margin: 0;*/
+}
+
+.second {
+  padding-top: 4em;
+  /*padding-top: 2em;*/
+  padding-top: 3em;
+}
+fieldset {
+  padding-right: 0;
+  margin-right: 0;
+}
+#other {
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+}
+#signup {
+  /*width: 255px;*/
+  margin-top: 1.5em;
+}
+
+.newsletter {
+  /*padding-top: 0;*/
+  /*margin-top: 0;*/
+}
+.second {
+  /*padding-top: 0;*/
+  /*margin-top: 0;*/
+}
+
+
+
+
+
+
 #signup {
   font-family: 'Merriweather', serif;
 }
@@ -127,54 +190,28 @@ select {
 
 input[id^="user"],
 select {
-  min-width: 288px;
+
+
+  /*min-width: 288px;*/
+  /*width: 280px;*/
+  width: 270px;
+  width: 290px;
+  /*width: 275px;*/
+
+  /*margin-right: 1em;*/
+
   /*min-width: 388px;*/
 }
 
 select {
   padding-left: 0.5em;
   padding-top: 0.5em;
-  /*opacity: 0.5;*/
-  /*vertical-align: center;*/
-  /*text-align: center;*/
 }
-/*
-#state {
-  font-size: 4em;
-  font-weight: bold;
-}*/
 
 select#user_state {
   font-size: 0.85em;
   opacity: 0.5;
   padding-top: 1em;
-  /*text-align: center;*/
-  /*vertical-align: center;*/
-}
-
-input::placeholder {
-  font-size: 0.75em;
-  text-align: right;
-  padding-right: 2em;
-  font-weight: 300;
-  font-style: italic;
-  opacity: 0.6;
-}
-
-input:focus::placeholder {
-  visibility: hidden;
-}
-
-input:focus {
-  /*font-size: 1.25em;*/
-  border: 2px solid black;
-  border-radius: 5px;
-  font-weight: normal;
-  font-weight: bolder;
-}
-
-#user_state:focus {
-  border: 2px solid black;
 }
 
 #zip {
@@ -225,8 +262,16 @@ textarea {
   border: none;
   border-radius: 5px;
   background-color: #ededed;
-  min-width: 288px;
+  /*min-width: 288px;*/
+
+  height: 90px;
   /*margin-bottom: 1em;*/
+
+
+  width: 265px;
+  width: 255px;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
 }
 
 input[type="submit"] {
@@ -239,7 +284,8 @@ input[type="submit"] {
   padding-bottom: 2em;
   margin-top: 0.2em;
   margin-bottom: 1em;
-  min-width: 288px;
+
+  width: 280px;
 }
 
 footer {
@@ -255,9 +301,6 @@ footer {
   margin-top: 0.5em;
   /*align-self: center;*/
 }
-
-
-
 
 .forms fieldset div {
   display: flex;
@@ -321,19 +364,113 @@ input[type="checkbox"] {
   padding-bottom: 0;
 }
 
+/* TESTING BORDER FOR .NEWSLETTER INSTEAD OF .SECOND*/
+.second {
+  /*margin-right: 0.5em;*/
+  border: none;
+  /*padding-top: 2em;*/
+}
+.newsletter {
+  /*border-top: 2px solid black;*/
+  margin-top: 0;
+  /*padding-top: 1em;*/
+  /*padding-top: 0;*/
+}
+fieldset:first-child {
+  border-bottom: 2px solid black;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+#zip {
+  margin-bottom: 2em;
+}
+.intro,
+main {
+  width: 280px;
+  width: 270px;
+  width: 290px;
+}
+
+/* TRANSITIONS FOR FOCUS STATES */
+
+input,
+#user_state,
+textarea,
+#signup {
+  outline: none;
+  font-weight: bold;
+  transition-property: box-shadow, border, background-color;
+  transition-duration: 0.3s, 0.3s, 1s;
+  transition-timing-function: ease;
+}
+
+input:focus,
+#user_state:focus,
+textarea:focus,
+#signup:focus {
+  box-shadow: 0 0 5px black;
+  border: 2px solid black;
+}
+textarea:focus {
+  box-shadow: 0 0 5px white;
+}
+
+input::placeholder {
+  font-size: 0.75em;
+  text-align: right;
+  padding-right: 2em;
+  font-weight: 300;
+  font-style: italic;
+  opacity: 0.6;
+
+  transition-property: visibility;
+}
+input:focus::placeholder,
+#other:focus::placeholder {
+  visibility: hidden;
+}
+
+input:focus,
+textarea:focus {
+  background-color: white;
+  background-color: #ecfffd;
+  background-color: #deff78;
+}
+#user_state:focus {
+  background-color: #deff78;
+}
+
+/*input:focus,
+#other:focus {
+  font-weight: bold;
+}*/
+
+
+/*
+
+#other:focus::placeholder {
+  visibility: hidden;
+}
+
 textarea:focus {
   outline: none;
-  /*border-color: black;*/
   border: 2px solid black;
 }
 
-#signup:focus {
-  border: 2px solid black;
+input:focus::placeholder {
+  visibility: hidden;
 }
 
-/*#signup:hover {
-  border: 2px solid black;
-}*/
+*/
+
+option:not([id="state"]) {
+  font-weight: bold;
+  color: black;
+  opacity: 1;
+}
+
+
 
 /* ======================================================================
                         TABLET/DESKTOP Size: 768px Media Query
@@ -396,12 +533,30 @@ textarea:focus {
     min-width: 436px;
   }
 
+  #zip-div {
+    justify-content: flex-start;
+  }
+  #zip {
+    margin-left: 3.35em;
+
+    margin-left: 4.75em;
+  }
+
   textarea {
     min-width: 36.375em;
   }
+  #other {
+    padding-top: 1em;
+    padding-left: 1em;
+  }
+  /*#other:focus::placeholder {
+    visibility: hidden;
+  }*/
+
   #signup {
-    max-width: 582px;
+    width: 606px;
     margin-bottom: 1.5em;
+    margin-top: 2em;
   }
 
   legend {
@@ -459,6 +614,25 @@ textarea:focus {
 
   .copyright {
     margin-bottom: 12em;
+  }
+
+  .intro,
+  main {
+    width: 280px;
+    width: 270px;
+    width: 290px;
+
+    width: 596px;
+    width: 606px;
+  }
+  .newsletter {
+    padding-right: 0.5em;
+  }
+  #signup {
+    /*width: 606px;*/
+  }
+  #zip {
+    /*margin-left:*/
   }
 
 
