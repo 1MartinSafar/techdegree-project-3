@@ -37,6 +37,9 @@ body {
   margin-right: 0.5em;
 
   width: 290px;
+
+
+  border-radius: 10px;
 }
 legend {
   /*padding: 0;*/
@@ -400,17 +403,19 @@ textarea,
 #signup {
   outline: none;
   font-weight: bold;
-  transition-property: box-shadow, border, background-color;
-  transition-duration: 0.3s, 0.3s, 1s;
+  transition-property: box-shadow, border, background-color, color;
+  transition-duration: 0.3s, 0.3s, 1s, 1s;
   transition-timing-function: ease;
 }
 
 input:focus,
 #user_state:focus,
 textarea:focus,
-#signup:focus {
+#signup:focus,
+#signup:Hover {
   box-shadow: 0 0 5px black;
   border: 2px solid black;
+  color: black;
 }
 textarea:focus {
   box-shadow: 0 0 5px white;
@@ -432,13 +437,21 @@ input:focus::placeholder,
 }
 
 input:focus,
-textarea:focus {
+textarea:focus,
+#signup:hover {
   background-color: white;
   background-color: #ecfffd;
   background-color: #deff78;
+  /*color: black;*/
 }
 #user_state:focus {
   background-color: #deff78;
+}
+#signup:focus {
+  /*color: black;*/
+}
+#signup:hover {
+
 }
 
 /*input:focus,
